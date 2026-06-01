@@ -20,19 +20,6 @@
 
 直接用浏览器打开 `index.html` 即可使用，不需要安装依赖。
 
-## 发布到 GitHub Pages
-
-1. 新建一个 GitHub 仓库，例如 `china-travel-level`。
-2. 把本项目文件提交到仓库根目录。
-3. 进入仓库的 `Settings` -> `Pages`。
-4. 在 `Build and deployment` 里选择 `Deploy from a branch`。
-5. 分支选择 `main`，目录选择 `/root`，保存。
-6. 稍等部署完成后，访问：
-
-```text
-https://你的用户名.github.io/china-travel-level/
-```
-
 ## 项目结构
 
 ```text
@@ -45,13 +32,6 @@ https://你的用户名.github.io/china-travel-level/
     └── README.md
 ```
 
-## 截图
-
-可以在网页中点击“导出图片”，把生成的 PNG 保存到 `assets/preview.png`，然后取消下面这一行的注释或替换为自己的截图。
-
-```md
-![预览](assets/preview.png)
-```
 
 ## 说明
 
