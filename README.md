@@ -4,9 +4,9 @@
 
 ## 直接使用/分享
 
-打开下面的链接即可直接使用，也可以复制给别人：
+打开下面的链接即可直接使用，也可以复制给别人。默认打开时所有省级地区都是未标记状态，Level 为 0：
 
-[https://frankdeng98.github.io/china-travel-level/](https://frankdeng98.github.io/china-travel-level/)
+[https://frankdeng98.github.io/china-travel-level/?v=level0](https://frankdeng98.github.io/china-travel-level/?v=level0)
 
 ## 功能
 
