@@ -2,6 +2,12 @@
 
 一个单文件静态网页，用参考图风格的省份块地图记录中国省级地区旅行经历。支持分级涂色、自动计分和 PNG 图片导出。
 
+## 直接使用/分享
+
+打开下面的链接即可直接使用，也可以复制给别人：
+
+[https://frankdeng98.github.io/china-travel-level/](https://frankdeng98.github.io/china-travel-level/)
+
 ## 功能
 
 - 点击等级后再点击省份，即可更新该省份颜色和分数。
