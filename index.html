@@ -511,7 +511,7 @@
 <body>
   <div class="app">
     <header class="topbar">
-      <h1><span class="level"><span id="displayTitle">中国</span> Level <span id="levelNumber" class="level-number">60</span></span></h1>
+      <h1><span class="level"><span id="displayTitle">中国</span> Level <span id="levelNumber" class="level-number">0</span></span></h1>
       <section class="summary" aria-label="完成度">
         <div class="summary-label">当前等级分</div>
         <div class="summary-row">
@@ -614,19 +614,10 @@
 
     const statusById = Object.fromEntries(statuses.map((status) => [status.id, status]));
 
-    const initialVisitedNames = [
-      "澳门", "江苏", "浙江", "安徽", "江西", "河南", "湖北", "湖南", "广东", "海南",
-      "四川", "陕西", "甘肃", "青海", "广西", "西藏", "北京", "上海", "重庆", "香港"
-    ];
-
     const defaultTitle = "中国";
-    const storageKey = "china-travel-level:v3";
-    const legacyStorageKey = "china-province-map:v2";
+    const storageKey = "china-travel-level:v4";
     const initialStatuses = Object.fromEntries(
-      provinces.map((province) => [
-        province.id,
-        initialVisitedNames.includes(province.name) ? "visited" : "never"
-      ])
+      provinces.map((province) => [province.id, "never"])
     );
     const initialState = loadState();
 
@@ -669,18 +660,6 @@
         }
       } catch (error) {
         localStorage.removeItem(storageKey);
-      }
-
-      try {
-        const legacyStatuses = JSON.parse(localStorage.getItem(legacyStorageKey));
-        if (legacyStatuses && typeof legacyStatuses === "object" && !Array.isArray(legacyStatuses)) {
-          return {
-            title: defaultTitle,
-            statuses: normalizeStatuses(legacyStatuses)
-          };
-        }
-      } catch (error) {
-        localStorage.removeItem(legacyStorageKey);
       }
 
       return {
